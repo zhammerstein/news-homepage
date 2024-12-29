@@ -1,0 +1,372 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+@media (max-width: 375px){
+
+    h4{
+        margin-top:0.75rem;
+    }
+
+    .yellowh1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.25rem;
+    }
+
+    .container2{
+        width:100%;
+        margin-left:0;
+        margin-top:4rem;
+        padding:1rem;
+        margin-bottom:4.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    body{
+        padding:1rem;
+    }
+
+    h1{
+        font-size: 2.6rem;
+    }
+
+    .toplink{
+        display:none;
+    }
+
+    .menubutton{
+        display:flex;
+        margin-top: 1.1rem;
+    }
+
+    .div1{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display:flex;
+        margin-bottom:2rem;
+    }
+
+    .image1mobile{
+        display:block;
+    }
+
+    .image1{
+        display:none;
+    }
+
+    .pdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        }
+
+        .p1{
+            margin-top:2rem;
+            width: 94%;
+        }
+
+        button{
+            margin-top:1.5rem;
+        }
+
+        .container3{
+            display:flex;
+            flex-direction: column;
+        }
+
+        .gamingpic{
+            max-width:9rem;
+            max-height:9rem;
+        }
+
+        h3{
+            font-size:2.25rem;
+        }
+
+        h4{
+            font-size:1.1rem;
+        }
+
+}
+
+@media (min-width: 375px){
+
+    h3{
+        font-size: 2.5rem;
+    }
+
+    .gamingpic{
+        max-width:55%;
+        max-height:55%;
+    }
+
+    h2{
+        font-size: 1.37rem;
+    }
+
+    .yellowh1{
+        font-size: 3rem;
+    }
+
+    .container2{
+        margin-left: 2.5rem;
+        padding:32px;
+    padding-bottom: 0rem;
+    }
+
+    button{
+        margin-top: 2.5rem;
+    }
+
+    .p1{
+        margin-top:1.5rem;
+        width: 80%;
+    }
+
+    .pdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    }
+
+    h1{
+        font-size: 4.25rem;
+        line-height: 4.1rem;
+    }
+
+    .image1mobile{
+        display:none;
+    }
+
+    .image1{
+        display:block;
+    }
+
+    .card{
+        display:flex;
+        margin-top:5rem;
+    }
+
+    body{
+        padding:5rem;
+    }
+
+    .toplink{
+        display:flex;
+    }
+
+    h4{
+        font-size:1.2rem;
+    }
+
+    .menubutton{
+        display:none;
+        margin-top: 1.1rem;
+    }
+
+    .div1{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .container3{
+    display:flex;
+    flex-direction: row;
+}
+
+.cardtext{
+
+    margin-bottom: 6rem;
+}
+
+}
+
+body{
+    display:flex;
+    margin:0;
+    padding-top:2.5rem;
+    height:100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    line-height: 1.75rem;
+    font-size: 0.938rem;
+    color:hsl(236, 13%, 42%);
+}
+
+.topbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+.toplink{
+    margin-left:3rem;
+}
+
+.toplink:hover{
+    cursor:pointer;
+    color:hsl(35, 77%, 62%);
+}
+
+.logo{
+    margin-top: 0.25rem;
+}
+
+.logo:hover{
+    cursor:pointer;
+}
+
+.container1{
+    max-width: 52.5rem;
+}
+
+.container2{
+    max-width: 25rem;
+    background-color: hsl(240, 100%, 5%);
+    padding-top: 0;
+}
+
+img:hover{
+    cursor:pointer;
+}
+
+h1{
+    font-weight:800;
+}
+
+h2{
+    color: hsl(36, 100%, 99%);
+    font-weight: 700;
+}
+
+h2:hover{
+    cursor:pointer;
+    color:hsl(35, 77%, 62%);
+}
+
+button{
+    max-width: 12rem;
+    width:100%;
+    min-height:3rem;
+    background-color: hsl(5, 85%, 63%);
+    border:none;
+    outline:none;
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding:16px;
+    letter-spacing: 0.3rem;
+    color:hsl(240, 100%, 5%);
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+button:active{
+    background-color: black;
+    color:white;
+}
+
+h3{
+    margin:0;
+    color:hsl(5, 85%, 63%);
+}
+
+h4{
+    font-weight: 800;
+}
+
+h4:hover{
+    cursor:pointer;
+    color:hsl(35, 77%, 62%);
+}
+
+.card{
+    flex-direction: row;
+}
+
+.cardtext{
+    margin-left:1rem;
+    max-width: 70%;
+}
